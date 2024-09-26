@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Neckband Headphones</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-image: url('https://picsum.photos/2000/1000');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+        }
+
+        #hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Main Content */
+        #top-5-phones {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #top-5-phones h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #343a40;
+        }
+
+        #phone-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .phone-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+            background-color: #f8f9fa;
+            align-items: center;
+        }
+
+        .phone-item:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .phone-item img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .phone-item h3 {
+            margin: 0 0 10px;
+            color: #007bff;
+        }
+
+        .phone-details {
+            flex: 3;
+        }
+
+        .phone-details p {
+            margin: 5px 0;
+        }
+
+        .phone-pros-cons {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .phone-pros-cons ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .phone-pros-cons li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .phone-pros-cons li::before {
+            content: '•';
+            color: #007bff;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer li {
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #fff;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .phone-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .phone-details,
+            .phone-pros-cons {
+                padding: 0;
+            }
+
+            .phone-item img {
+                margin: 0 0 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#top-5-phones">Top 5 Headphones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section id="hero">
+        <h1>Top 5 Neckband Headphones</h1>
+        <p>Welcome to our blog, where we review the top 5 neckband headphones in the market!</p>
+    </section>
+    <!-- Top 5 Headphones -->
+    <section id="top-5-phones">
+        <h2>Our Top Picks!</h2>
+        <ul id="phone-list">
+            <!-- Phone list will be generated dynamically using JavaScript -->
+        </ul>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Top 5 Neckband Headphones Blog</p>
+        <ul>
+            <li><a href="https://twitter.com/top5phones" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com/top5phones" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+    <script>
+        const phoneData = [
+            {
+                title: "boAt Rockerz 255 Pro+ Bluetooth Neckband",
+                image: "https://m.media-amazon.com/images/I/61+SW9nDTEL._SX679_.jpg",
+                price: "Rs. 1,099",
+                pros: ["Great sound quality", "Deep bass", "Long battery life"],
+                cons: ["Some durability issues reported"],
+                buyLink: "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B09SH9D45B?crid=1BRLHIUAFKA7B&dib=eyJ2IjoiMSJ9.sIQm_1yAdMLtuc4n6j55ZKtRbyyT4jwRHVlIBhMGixXDNIWL_t4h9pzp50-92t1UgoUpznM4DB7-MfJVhwYhkQJK46_e9A55oVcWbL9G6Z2ixxSrsQLG0j61FNEe9MAU9YCrQ9xlbCJu5Ga1NiCGGzmVwNHJ_7c8xCiOlC14RjXW1gfLwB8ITQWo73CMQqwNCiSmEneIcdZyC0Mg4uZhqUO8Y975AGYWRh3wWC1zjPQxuYubd08vCftNxVzBkP1MBUe1Cbnx0cw7YruL9CiTnIGpR157jMQRt-eRF96e4BI.axRXiZTUImkImVJ2okcUMOJqISWGxcaAU7L59nGFo6g&dib_tag=se&keywords=S22&qid=1727348918&s=electronics&sprefix=s22%2Celectronics%2C222&sr=1-1&th=1&linkCode=ll1&tag=muditmamodia-21&linkId=aea6d3d246d7fc619203801a04f8cb82&language=en_IN&ref_=as_li_ss_tl"
+            },
+            {
+                title: "OnePlus Bullets Z2 Bluetooth Wireless in-Ear Earphones",
+                image: "https://m.media-amazon.com/images/I/31pAe23ncfL._SX300_SY300_QL70_FMwebp_.jpg",
+                price: "Rs. 1,499",
+                pros: ["Pristine sound", "Fast charging", "Elegant design"],
+                cons: ["Earbuds might feel bulky for some"],
+                buyLink: "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B09SH9D45B?crid=1BRLHIUAFKA7B&dib=eyJ2IjoiMSJ9.sIQm_1yAdMLtuc4n6j55ZKtRbyyT4jwRHVlIBhMGixXDNIWL_t4h9pzp50-92t1UgoUpznM4DB7-MfJVhwYhkQJK46_e9A55oVcWbL9G6Z2ixxSrsQLG0j61FNEe9MAU9YCrQ9xlbCJu5Ga1NiCGGzmVwNHJ_7c8xCiOlC14RjXW1gfLwB8ITQWo73CMQqwNCiSmEneIcdZyC0Mg4uZhqUO8Y975AGYWRh3wWC1zjPQxuYubd08vCftNxVzBkP1MBUe1Cbnx0cw7YruL9CiTnIGpR157jMQRt-eRF96e4BI.axRXiZTUImkImVJ2okcUMOJqISWGxcaAU7L59nGFo6g&dib_tag=se&keywords=S22&qid=1727348918&s=electronics&sprefix=s22%2Celectronics%2C222&sr=1-1&th=1&linkCode=ll1&tag=muditmamodia-21&linkId=aea6d3d246d7fc619203801a04f8cb82&language=en_IN&ref_=as_li_ss_tl"
+            },
+            {
+                title: "Sony WI-C100 Wireless Headphones",
+                image: "https://m.media-amazon.com/images/I/61xqefY2rZL._SX679_.jpg",
+                price: "Rs. 1,590",
+                pros: ["Adjustable sound settings", "Outstanding clarity", "Comfortable fit"],
+                cons: ["Pricier than alternatives"],
+                buyLink: "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B09SH9D45B?crid=1BRLHIUAFKA7B&dib=eyJ2IjoiMSJ9.sIQm_1yAdMLtuc4n6j55ZKtRbyyT4jwRHVlIBhMGixXDNIWL_t4h9pzp50-92t1UgoUpznM4DB7-MfJVhwYhkQJK46_e9A55oVcWbL9G6Z2ixxSrsQLG0j61FNEe9MAU9YCrQ9xlbCJu5Ga1NiCGGzmVwNHJ_7c8xCiOlC14RjXW1gfLwB8ITQWo73CMQqwNCiSmEneIcdZyC0Mg4uZhqUO8Y975AGYWRh3wWC1zjPQxuYubd08vCftNxVzBkP1MBUe1Cbnx0cw7YruL9CiTnIGpR157jMQRt-eRF96e4BI.axRXiZTUImkImVJ2okcUMOJqISWGxcaAU7L59nGFo6g&dib_tag=se&keywords=S22&qid=1727348918&s=electronics&sprefix=s22%2Celectronics%2C222&sr=1-1&th=1&linkCode=ll1&tag=muditmamodia-21&linkId=aea6d3d246d7fc619203801a04f8cb82&language=en_IN&ref_=as_li_ss_tl"
+            },
+            {
+                title: "realme Buds Wireless 3 in-Ear Bluetooth Headphones",
+                image: "https://m.media-amazon.com/images/I/61xqefY2rZL._SX679_.jpg",
+                price: "Rs. 1,599",
+                pros: ["High-quality audio", "Lightweight", "Comfortable"],
+                cons: ["Battery life could be better"],
+                buyLink: "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B09SH9D45B?crid=1BRLHIUAFKA7B&dib=eyJ2IjoiMSJ9.sIQm_1yAdMLtuc4n6j55ZKtRbyyT4jwRHVlIBhMGixXDNIWL_t4h9pzp50-92t1UgoUpznM4DB7-MfJVhwYhkQJK46_e9A55oVcWbL9G6Z2ixxSrsQLG0j61FNEe9MAU9YCrQ9xlbCJu5Ga1NiCGGzmVwNHJ_7c8xCiOlC14RjXW1gfLwB8ITQWo73CMQqwNCiSmEneIcdZyC0Mg4uZhqUO8Y975AGYWRh3wWC1zjPQxuYubd08vCftNxVzBkP1MBUe1Cbnx0cw7YruL9CiTnIGpR157jMQRt-eRF96e4BI.axRXiZTUImkImVJ2okcUMOJqISWGxcaAU7L59nGFo6g&dib_tag=se&keywords=S22&qid=1727348918&s=electronics&sprefix=s22%2Celectronics%2C222&sr=1-1&th=1&linkCode=ll1&tag=muditmamodia-21&linkId=aea6d3d246d7fc619203801a04f8cb82&language=en_IN&ref_=as_li_ss_tl"
+            },
+            {
+                title: "JBL Tune 215BT Bluetooth Wireless Earphones",
+                image: "https://m.media-amazon.com/images/I/61xqefY2rZL._SX679_.jpg",
+                price: "Rs. 1,598",
+                pros: ["Well-balanced sound", "Sweat-resistant", "Durable"],
+                cons: ["Control buttons can be hard to operate"],
+                buyLink: "https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B09SH9D45B?crid=1BRLHIUAFKA7B&dib=eyJ2IjoiMSJ9.sIQm_1yAdMLtuc4n6j55ZKtRbyyT4jwRHVlIBhMGixXDNIWL_t4h9pzp50-92t1UgoUpznM4DB7-MfJVhwYhkQJK46_e9A55oVcWbL9G6Z2ixxSrsQLG0j61FNEe9MAU9YCrQ9xlbCJu5Ga1NiCGGzmVwNHJ_7c8xCiOlC14RjXW1gfLwB8ITQWo73CMQqwNCiSmEneIcdZyC0Mg4uZhqUO8Y975AGYWRh3wWC1zjPQxuYubd08vCftNxVzBkP1MBUe1Cbnx0cw7YruL9CiTnIGpR157jMQRt-eRF96e4BI.axRXiZTUImkImVJ2okcUMOJqISWGxcaAU7L59nGFo6g&dib_tag=se&keywords=S22&qid=1727348918&s=electronics&sprefix=s22%2Celectronics%2C222&sr=1-1&th=1&linkCode=ll1&tag=muditmamodia-21&linkId=aea6d3d246d7fc619203801a04f8cb82&language=en_IN&ref_=as_li_ss_tl"
+            }
+        ];
+
+        const phoneList = document.getElementById('phone-list');
+        phoneData.forEach(phone => {
+            const phoneItem = document.createElement('li');
+            phoneItem.classList.add('phone-item');
+            phoneItem.innerHTML = `
+                <img src="${phone.image}" alt="${phone.title}">
+                <div class="phone-details">
+                    <h3>${phone.title}</h3>
+                    <p><strong>Price:</strong> ${phone.price}</p>
+                    <a href="${phone.buyLink}" target="_blank" class="buy-button">Buy on Amazon</a>
+                </div>
+                <div class="phone-pros-cons">
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        ${phone.pros.map(pro => `<li>${pro}</li>`).join('')}
+                    </ul>
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        ${phone.cons.map(con => `<li>${con}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            phoneList.appendChild(phoneItem);
+        });
+    </script>
+</body>
+</html>
